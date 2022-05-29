@@ -1,3 +1,16 @@
+**Extension**
+Ödevimizde Extension geliştirmemiz bunu datetime türüne uygulamamız isteniyordu;
+Uygulayacağım Extension'ı  programımda Extensions klasörü altında tanımladım ve bir "datetime" nesnesi almasını sağladım ve bu nesne ile gelen tarihi, "now" hazır metodu ile o anın tarihini oluşturduğum nesnem ile aralındaki farkı aldım ve bu farkı "span"  ile toplam saniye türünü dönüştürdüm.Ve gerekli kontroller ile bu saniyenin kaç yıl kaç ay gibi parametreleri içerdiğini hesaplayıp sonra istenin string şeklinde geri dönüşünü sağladım ve controller'da gerekli endpointin içinde "query"den extensiona gönderilecek nesneyi alıp extensiona aktaran ve geri dönen string değerini string olarak response ile geri dönen bir ödev yapmış oldum.
+
+
+**Attribute**
+
+Bizden istenen veritabanı tablomu oluştacak class'ımı Model klasörü altında tanımladım ve class'ımın üzerinde tanımladığım attribute ile oluşacak tablonun adını alıyorum ve property'lerin üzerinde tanımlanan attribute ile de o verinin ismini,türünü,zorunluluğunu aldum ve bunları string ile attribute'a gönderdim.Validation klasörüm aldında tanımladığım validation class'ına gerekli Customer nesnesini gönderip içeride tablo adının ingilizce karakter olma kontrolünü sağlayıp gerekli string çıktıyı vermesini sağladım.
+Controller'da CreateTable metodu ile queryden id'sini aldığım nesnenin yine aynı metod içinde örnek bir nesnesini yarattım ve gerekli çıktıyı string olarak geri döndürdüm.
+
+**SOLİD**
+Interface klasörü altında tanımladığım interface'leri WorkAnimal altında tanımladığım Cat ve Parrot nesnelerime aktardım.Farklı özellikleri farklı interface'ler ile alarak Interface Segration özelliğini kullandım ve program içinde bu class'lara bağımlılığı kaldırmak için startup.cs içinde services olarak en üst arayüzle kullanmak istediğim nesneyi oluşturdum ve başka bir nesne gerektiğinde sadece startuptaki yaratılan nesneyi değiştirmem gerekli olucak ve bu şekilde de dependency injection'u kullanmış oldum.
+
 # 2. Hafta Ödev 1
 
 > Extension Geliştirin
